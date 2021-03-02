@@ -17,7 +17,7 @@ function makeMap() {
         success: function(data) {
             $.ajax({
                 type: "GET",
-                url: "/static/data/PB2002_boundaries.json",
+                url: "static/data/PB2002_boundaries.json",
                 success: function(tectonic) {
                     buildMap(data, tectonic);
                 },
